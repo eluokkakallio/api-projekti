@@ -1,0 +1,10 @@
+# content
+.idea
+.vscode
+.vscode-test
+.npm
+.eslintcache
+node_modules/
+package-lock.json
+.DS_Store
+__MAC
