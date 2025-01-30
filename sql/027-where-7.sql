@@ -6,9 +6,9 @@ SELECT ename
         , job
         , sal
 FROM emp
-WHERE (job = 'CLERK'
+WHERE (UPPER(job) = 'CLERK'
         OR
-        job = 'ANALYST')
+        UPPER(job) = 'ANALYST')
         AND
         sal NOT IN (1000, 5000)
 ;
