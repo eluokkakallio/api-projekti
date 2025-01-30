@@ -5,7 +5,9 @@
 SELECT ename
         , deptno
 FROM emp
-WHERE deptno = 10 or deptno = 30
+WHERE deptno = 10
+        OR
+        deptno = 30
 ;
 
 
