@@ -8,7 +8,7 @@ SELECT emp.ename
 FROM emp
 INNER JOIN dept
         ON emp.deptno = dept.deptno
-
+ORDER BY emp.ename ASC
 ;
 
 

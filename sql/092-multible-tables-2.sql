@@ -7,5 +7,6 @@ SELECT dept.loc
 FROM emp
 INNER JOIN dept
     ON emp.deptno = dept.deptno
+ORDER BY emp.job ASC
 ;
 -- End of file
