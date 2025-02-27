@@ -3,6 +3,7 @@
 -- File: 042-like-2
 
 SELECT ename
+        AS "Name"
         , deptno
         AS "Department"
 FROM emp
