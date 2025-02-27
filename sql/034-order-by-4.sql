@@ -11,7 +11,7 @@ SELECT ename
         , comm
         AS "Comm"
 FROM emp
-WHERE comm > 'Monthly Salary'
+WHERE COALESCE(comm, 0) > sal
 ORDER BY ename ASC
         , sal ASC
         , comm ASC
