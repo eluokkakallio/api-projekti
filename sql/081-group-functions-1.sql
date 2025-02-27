@@ -2,8 +2,7 @@
 -- Date: 2025-02-28
 -- File: 081-group-functions-1
 
-SELECT job
-        , COUNT(mgr)
+SELECT COUNT(mgr)
         AS "count of managers"
 FROM emp
 GROUP BY job
