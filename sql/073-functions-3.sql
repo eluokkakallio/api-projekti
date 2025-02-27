@@ -4,7 +4,7 @@
 
 SELECT empno
         , ename
-        , COALESCE(sal, 0) * 1.15
+        , ROUND(COALESCE(sal, 0) * 1.15)
         AS "new salary"
         , ROUND((COALESCE(sal, 0) * 1.15) - sal)
         AS "increase"
