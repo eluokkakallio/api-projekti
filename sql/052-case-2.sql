@@ -11,6 +11,7 @@ SELECT ename
                     THEN comm * 1.05
                 ELSE comm
             END
+        AS "comm"
 FROM emp
 ORDER BY comm ASC, ename ASC
 ;
