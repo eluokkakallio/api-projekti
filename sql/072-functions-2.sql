@@ -7,7 +7,7 @@ SELECT LOWER(ename)
         , LENGTH(ename)
         AS "Characters"
 FROM emp
-ORDER BY "Characters" ASC
+ORDER BY "Characters" ASC, ename ASC
 ;
 
 
