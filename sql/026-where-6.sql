@@ -9,9 +9,9 @@ SELECT ename
 FROM emp
 WHERE sal > 1500
         AND
-        deptno = 10
+        (deptno = 10
         OR
-        deptno = 30
+        deptno = 30)
 ;
 
 -- End of file
