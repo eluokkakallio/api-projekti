@@ -9,8 +9,9 @@ SELECT deptno
         , sal * 0.31 * 12
         AS "Taxes"
 FROM emp
-WHERE deptno = '10'
+WHERE deptno = 10
 ORDER BY "Employee" ASC
+        , deptno ASC
 ;
 
 -- End of file
