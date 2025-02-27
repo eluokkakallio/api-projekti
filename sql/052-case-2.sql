@@ -12,6 +12,7 @@ SELECT ename
                 ELSE comm
             END
 FROM emp
+ORDER BY comm ASC, ename ASC
 ;
 
 
