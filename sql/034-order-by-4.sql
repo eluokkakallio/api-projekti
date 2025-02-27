@@ -11,10 +11,10 @@ SELECT ename
         , comm
         AS "Comm"
 FROM emp
-WHERE "Comm" > "Monthly Salary"
-ORDER BY "Employee" ASC
-        , "Monthly Salary" ASC
-        , "Comm" ASC
+WHERE comm > 'Monthly Salary'
+ORDER BY ename ASC
+        , sal ASC
+        , comm ASC
 ;
 
 -- End of file
