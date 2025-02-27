@@ -4,10 +4,13 @@
 
 
 SELECT ename
+        , sal
         ,(sal * 1.15)
         AS "new salary"
 FROM emp
+WHERE mgr = 7698
 ORDER BY "new salary" ASC
+        , ename ASC
 ;
 
 -- End of file
