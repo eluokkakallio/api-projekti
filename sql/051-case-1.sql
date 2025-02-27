@@ -3,7 +3,7 @@
 -- File: 051-case-1
 
 SELECT ename
-        , CASE WHEN job = 'SALESMAN'
+        , CASE WHEN UPPER(job) = 'SALESMAN'
                     THEN 'SALES PERSON'
                 ELSE job
             END
