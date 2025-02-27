@@ -2,7 +2,7 @@
 -- Date: 2025-02-27
 -- File: 072-functions-2
 
-SELECT ename
+SELECT LOWER(ename)
         AS "Name"
         , LENGTH(ename)
         AS "Characters"
