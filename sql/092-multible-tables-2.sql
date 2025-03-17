@@ -6,7 +6,7 @@ SELECT DISTINCT emp.job
 FROM emp
 INNER JOIN dept
     ON emp.deptno = dept.deptno
-WHERE LOWER(dept.loc) = 'dallas'
+WHERE LOWER(dept.loc) = 'boston'
         OR
         LOWER(dept.loc) = 'new york'
 ORDER BY emp.job ASC

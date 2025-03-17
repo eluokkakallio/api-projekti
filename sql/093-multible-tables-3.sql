@@ -5,6 +5,7 @@
 SELECT e.ename
         , d.dname
         , d.loc
+        , e.comm
 FROM emp AS e
 INNER JOIN dept AS d
     ON e.deptno = d.deptno
