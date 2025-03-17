@@ -8,6 +8,9 @@ SELECT emp.ename
 FROM emp
 INNER JOIN dept
         ON emp.deptno = dept.deptno
+WHERE LOWER(dept.loc) = 'dallas'
+        OR
+        LOWER(emp.job) = 'salesman'
 ORDER BY emp.ename ASC
 ;
 
