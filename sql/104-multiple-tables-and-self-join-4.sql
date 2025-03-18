@@ -7,14 +7,16 @@ SELECT dept.loc AS "Location"
         , employee.ename AS "Employee"
         , manager.ename AS "Manager"
 
-FROM    emp AS 'employee'
-INNER JOIN emp AS 'manager'
+FROM    emp AS employee
+INNER JOIN emp AS manager
     ON employee.mgr = manager.empno
 INNER JOIN dept
     ON employee.deptno = dept.deptno
 INNER JOIN salgrade
-    ON employee.sal BETWEEN salgrade.losal AND salgrade.hisal
-WHERE salgrade.grade > 3
+    ON manager.sal BETWEEN salgrade.losal AND salgrade.hisal
+WHERE salgrade.grade = 3
+        OR salgrade.grade = 4
+        OR salgrade.grade = 5
 ORDER BY dept.loc ASC
         , manager.ename ASC
         , employee.ename ASC
