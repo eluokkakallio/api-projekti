@@ -10,11 +10,7 @@ SELECT manager.ename AS "Manager"
 FROM    emp AS 'employee'
 INNER JOIN emp AS 'manager'
     ON employee.mgr = manager.empno
-WHERE LOWER(manager.ename) = "blake"
-    OR
-    LOWER(manager.ename) = "ford"
-    OR
-    LOWER(manager.ename) = "scott"
+WHERE LOWER(manager.ename) IN ('blake', 'ford', 'scott')
 ORDER BY manager.ename ASC
         , employee.ename ASC
 ;
