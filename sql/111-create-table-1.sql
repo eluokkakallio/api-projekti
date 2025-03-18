@@ -2,17 +2,13 @@
 -- Date: 2025-03-18
 -- File: 111-create-table-1
 
-INSERT INTO football
+CREATE TABLE football
 (
-    id
-    , first
-    , last
-    , team
-    , comment
-)
-VALUES
-(
-
+    id VARCHAR(80) [NOT NULL] [UNIQUE] [PRIMARY KEY]
+    , first VARCHAR(80)
+    , last VARCHAR(80)
+    , team VARCHAR(80)
+    , comment VARCHAR(80)
 );
 
 -- End of file
