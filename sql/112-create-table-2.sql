@@ -2,14 +2,14 @@
 -- Date: 2025-03-18
 -- File: 112-create-table-2
 
-CREATE table weather
+CREATE TABLE football
 (
-    id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
-    , time_of_reading TIMESTAMP
-    , high DECIMAL
-    , low DECIMAL
-    , sig VARCHAR(2)
-    , comment VARCHAR(200)
+    id VARCHAR(80) [NOT NULL] [UNIQUE] [PRIMARY KEY]
+    , first VARCHAR(80)
+    , last VARCHAR(80)
+    , team VARCHAR(80)
+    , comment VARCHAR(80)
 );
+
 
 -- End of file
