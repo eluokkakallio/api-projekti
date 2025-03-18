@@ -2,7 +2,7 @@
 -- Date: 2025-02-28
 -- File: 103-multible-tables-and-self-join-3
 
-SELECT employee.ename AS "Employee"
+SELECT employee.ename
 FROM    emp AS employee
 INNER JOIN emp AS manager
     ON employee.mgr = manager.empno
