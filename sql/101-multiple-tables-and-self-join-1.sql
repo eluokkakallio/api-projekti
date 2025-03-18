@@ -7,8 +7,8 @@ SELECT manager.ename AS "Manager"
         , employee.ename AS "Employee"
         , employee.empno AS "Emp#"
 
-FROM    emp AS 'employee'
-INNER JOIN emp AS 'manager'
+FROM    emp AS employee
+INNER JOIN emp AS manager
     ON employee.mgr = manager.empno
 WHERE LOWER(manager.ename) IN ('blake', 'ford', 'scott')
 ORDER BY manager.ename ASC
