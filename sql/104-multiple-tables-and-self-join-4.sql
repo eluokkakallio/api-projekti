@@ -14,9 +14,11 @@ INNER JOIN dept
     ON employee.deptno = dept.deptno
 INNER JOIN salgrade
     ON manager.sal BETWEEN salgrade.losal AND salgrade.hisal
-WHERE salgrade.grade = 3
+WHERE (salgrade.grade = 3
         OR salgrade.grade = 4
-        OR salgrade.grade = 5
+        OR salgrade.grade = 5)
+        AND
+        LOWER(manager.ename) IN ('blake', 'ford', 'jones')
 ORDER BY dept.loc ASC
         , manager.ename ASC
         , employee.ename ASC
