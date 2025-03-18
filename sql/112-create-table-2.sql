@@ -4,11 +4,11 @@
 
 CREATE TABLE football
 (
-    id VARCHAR(80) [NOT NULL] [UNIQUE] [PRIMARY KEY]
+    id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , first VARCHAR(80)
     , last VARCHAR(80)
     , team VARCHAR(80)
-    , comment VARCHAR(80)
+    , comment VARCHAR(200)
 );
 
 

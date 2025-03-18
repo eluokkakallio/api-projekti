@@ -10,7 +10,7 @@ CREATE TABLE person
     , phone VARCHAR(80)
     , zip VARCHAR(80)
     , city VARCHAR(80)
-    , address VARCHAR(80)
+    , address VARCHAR(200)
     -- Note: suppose phone numbers can
     -- contain only "+" and spaces
     -- Exmples: +358 50 12 34 55 66

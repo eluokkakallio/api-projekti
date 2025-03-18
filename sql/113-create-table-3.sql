@@ -2,13 +2,13 @@
 -- Date: 2025-03-18
 -- File: 113-create-table-3
 
-CREATE table weather
+CREATE TABLE weather
 (
     id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , time_of_reading TIMESTAMP
     , high DECIMAL
     , low DECIMAL
-    , sig VARCHAR(2)
+    , sig VARCHAR(80)
     , comment VARCHAR(200)
 );
 
