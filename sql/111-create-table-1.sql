@@ -2,13 +2,19 @@
 -- Date: 2025-03-18
 -- File: 111-create-table-1
 
-CREATE TABLE football
+CREATE TABLE person
 (
-    id VARCHAR(80) [NOT NULL] [UNIQUE] [PRIMARY KEY]
-    , first VARCHAR(80)
+    id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , last VARCHAR(80)
-    , team VARCHAR(80)
-    , comment VARCHAR(80)
+    , first VARCHAR(80)
+    , phone VARCHAR(80)
+    , zip VARCHAR(80)
+    , city VARCHAR(80)
+    , address VARCHAR(80)
+    -- Note: suppose phone numbers can
+    -- contain only "+" and spaces
+    -- Exmples: +358 50 12 34 55 66
 );
+
 
 -- End of file
