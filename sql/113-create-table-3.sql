@@ -2,7 +2,8 @@
 -- Date: 2025-03-18
 -- File: 113-create-table-3
 
-CREATE TABLE IF NOT EXISTS weather
+DROP TABLE IF EXISTS weather;
+CREATE TABLE weather
 (
     id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , time_of_reading TIMESTAMP
