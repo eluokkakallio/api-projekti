@@ -109,13 +109,13 @@ API EXAMPLES
 komennot ajettu postmanilla
 
 GET by id
-curl http://localhost:8080/cleaners/2
+curl --silent http://localhost:8080/cleaners/2
 
 GET by criteria
-curl http://localhost:8080/cleaners?fname=Milla&salgrade=1
+curl --silent http://localhost:8080/cleaners?fname=Milla&salgrade=1
 
 POST a new cleaner
-curl --location --request POST 'http://localhost:8080/cleaners' \
+curl --silent --location --request POST 'http://localhost:8080/cleaners' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "fname": "jaska",
@@ -125,14 +125,14 @@ curl --location --request POST 'http://localhost:8080/cleaners' \
 }'
 
 PUT update salgrade
-curl --location --request PUT 'http://localhost:8080/cleaners/2' \
+curl --silent --location --request PUT 'http://localhost:8080/cleaners/2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "salgrade": 2
 }'
 
 DELETE a location
-curl --location --request DELETE 'http://localhost:8080/locations/netum'
+curl --silent --location --request DELETE 'http://localhost:8080/locations/netum'
 
 
 
