@@ -1,30 +1,30 @@
 
 INSERT INTO cleaner
-(id, lname, fname, salgrade, hire_date)
+(id, lname, fname, salgrade, hireDate)
 VALUES
 (1, "Magia", "Milla", 1, '2024-01-01')
 ;
 
 INSERT INTO cleaner
-(id, lname, fname, salgrade, hire_date)
+(id, lname, fname, salgrade, hireDate)
 VALUES
 (2, "Joulu", "Muori", 4, '1996-12-24')
 ;
 
 INSERT INTO cleaner
-(id, lname, fname, salgrade, hire_date)
+(id, lname, fname, salgrade, hireDate)
 VALUES
 (3, "Posteljooni", "Pate", 5, '2020-02-02')
 ;
 
 INSERT INTO cleaner
-(id, lname, fname, salgrade, hire_date)
+(id, lname, fname, salgrade, hireDate)
 VALUES
 (4, "Puuha", "Pete", 2, "2000-08-01")
 ;
 
 INSERT INTO cleaner
-(id, lname, fname, salgrade, hire_date)
+(id, lname, fname, salgrade, hireDate)
 VALUES
 (5, "Poppanen", "Maija", 5, "1998-04-23")
 ;

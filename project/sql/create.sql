@@ -8,7 +8,7 @@ CREATE TABLE cleaner
     , fname VARCHAR(80)
     , lname VARCHAR(80)
     , salgrade INTEGER NOT NULL
-    , hire_date DATE
+    , hireDate DATE
 
     , CONSTRAINT cleaner__id_primary_key
       PRIMARY KEY (id)
