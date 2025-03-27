@@ -53,7 +53,7 @@ API DESCRIPTION
         fname (string) – Etunimi
         lname (string) – Sukunimi
         salgrade (numero) – Palkkaluokka
-        hire_date (string, muodossa YYYY-MM-DD) – Päivämäärä, jolloin siivooja palkattiin
+        hireDate (string, muodossa YYYY-MM-DD) – Päivämäärä, jolloin siivooja palkattiin
 
         Vastaus:
         Onnistunut: Lista siivoojista JSON-muodossa.
@@ -67,7 +67,7 @@ API DESCRIPTION
         fname (string, vaadittu) – Etunimi
         lname (string, vaadittu) – Sukunimi
         salgrade (numero, vaadittu) – Palkkaluokka
-        hire_date (string, muodossa YYYY-MM-DD, vaadittu) – Palkkauspäivä
+        hireDate (string, muodossa YYYY-MM-DD, vaadittu) – Palkkauspäivä
 
         Vastaus:
         Onnistunut: Lisätyn siivoojan tiedot JSON-muodossa ja statuskoodi 201.
@@ -106,7 +106,6 @@ API DESCRIPTION
 
 
 API EXAMPLES
-komennot ajettu postmanilla
 
 GET by id
 curl --silent http://localhost:8080/cleaners/2
@@ -121,7 +120,7 @@ curl --silent --location --request POST 'http://localhost:8080/cleaners' \
     "fname": "jaska",
     "lname": "jokunen",
     "salgrade": 1,
-    "hire_date": "2025-03-27"
+    "hireDate": "2025-03-27"
 }'
 
 PUT update salgrade
