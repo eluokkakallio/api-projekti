@@ -1,10 +1,18 @@
 # content
 .idea
-.vscode
+.vscode*
 .vscode-test
 .npm
 .eslintcache
 node_modules/
 package-lock.json
 .DS_Store
-__MAC
+__MAC*/
+*.tmp
+*.swp
+*.bak
+*[#~]
+.*[#~]
+.DS_*
+ database.db
+*.sqlite

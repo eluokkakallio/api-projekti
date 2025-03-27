@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "project/README.txt - Required. This file     includes the author's name, date, project     description (spanning at least two     paragraphs), setup instructions detailing     how to install the required Node modules,     instructions on starting the service, a     definition of all API endpoints, and     examples of how to call the API from the     command line using the \"curl\" program.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}
