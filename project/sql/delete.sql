@@ -9,3 +9,4 @@ WHERE id <= 100;
 
 DELETE FROM salgrade
 WHERE salgrade <=100;
+
