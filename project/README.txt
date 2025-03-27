@@ -106,6 +106,7 @@ API DESCRIPTION
 
 
 API EXAMPLES
+komennot ajettu postmanilla
 
 GET by id
 curl --location 'localhost:8080/cleaners/2’
