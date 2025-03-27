@@ -107,7 +107,21 @@ API DESCRIPTION
 
 API EXAMPLES
 
-<curl command API call examples>
-curl.exe --silent --include "http://localhost:8080/cleaners/?fname=Milla"
+GET by id
+curl --location 'localhost:8080/cleaners/2’
+
+GET by criteria
+curl --location 'localhost:8080/cleaners?fname=Milla&salgrade=1’
+
+POST a new cleaner
+curl --location --request POST 'localhost:8080/cleaners/?fname=jaska&lname=jokunen&salgrade=1&hire_date=2025-03-27'
+
+PUT update salgrade
+curl --location --request PUT 'localhost:8080/cleaners/2?salgrade=2' \--header 'Content-Type: application/json' \--data '{"salgrade": 2}’
+
+DELETE a location
+curl --location --request DELETE 'localhost:8080/locations/netum'
+
+
 
 
