@@ -23,37 +23,27 @@ API mahdollistaa:
 
 ## Asennus
 ## 1. kloonaa projekti
-    ```
     git clone <repository-url>
     cd <project-directory>
-    ```
 
 ## 2. Asenna riippuvuudet ASENNA
-    ```
     npm install
-    ```
 
 ## 3. Luo tietokanta
-    ```
     sqlite3 database.db < sql/create.sql
     sqlite3 database.db < sql/insert.sql
-    ```
     
-    Tarkemmat tiedot sql/README.txt
+Tarkemmat tiedot sql/README.txt
 
 ## 4. Ympäristömuuttujat
-    Luo .env -tiedosto ja määritä:
-    ```
+Luo .env -tiedosto ja määritä:
     PORT=8080
-    ```
 
 ------
 
 ## Käyttö
-    Käynnistä palvelin
-    ```
+Käynnistä palvelin
     node server.js
-    ```
 
 -----
  ### API-endpointit
