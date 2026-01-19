@@ -23,18 +23,18 @@ API mahdollistaa:
 
 ## Asennus
 ## 1. kloonaa projekti
-    ```bash
+    ```
     git clone <repository-url>
     cd <project-directory>
     ```
 
 ## 2. Asenna riippuvuudet ASENNA
-    ```bash
+    ```
     npm install
     ```
 
 ## 3. Luo tietokanta
-    ```bash
+    ```
     sqlite3 database.db < sql/create.sql
     sqlite3 database.db < sql/insert.sql
     ```
@@ -43,7 +43,7 @@ API mahdollistaa:
 
 ## 4. Ympäristömuuttujat
     Luo .env -tiedosto ja määritä:
-    ```bash
+    ```
     PORT=8080
     ```
 
@@ -51,7 +51,7 @@ API mahdollistaa:
 
 ## Käyttö
     Käynnistä palvelin
-    ```bash
+    ```
     node server.js
     ```
 
