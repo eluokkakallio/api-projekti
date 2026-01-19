@@ -26,15 +26,18 @@ API mahdollistaa:
     ```bash
     git clone <repository-url>
     cd <project-directory>
+    ```
 
 ## 2. Asenna riippuvuudet ASENNA
     ```bash
     npm install
+    ```
 
 ## 3. Luo tietokanta
     ```bash
     sqlite3 database.db < sql/create.sql
     sqlite3 database.db < sql/insert.sql
+    ```
     
     Tarkemmat tiedot sql/README.txt
 
@@ -42,6 +45,7 @@ API mahdollistaa:
     Luo .env -tiedosto ja määritä:
     ```bash
     PORT=8080
+    ```
 
 ------
 
@@ -49,6 +53,7 @@ API mahdollistaa:
     Käynnistä palvelin
     ```bash
     node server.js
+    ```
 
 -----
  ### API-endpointit
