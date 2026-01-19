@@ -1,32 +1,58 @@
-DESCRIPTION
-Tämä projekti tarjoaa REST API:n, joka hallinnoi siivousfirman tietoja SQLite-tietokannassa.
-API mahdollistaa siivoojien tietojen hakemisen ja lisäämisen.
+# Cleaning Company REST API
 
-DEPENCIES
-Tämä projekti vaatii Node.js sekä sisältää seuraavat node modulet
-express, sqlite3, dotenv, body-parser
+Tämä projekti tarjoaa REST API:n siivousfirman tietojen hallintaan.
+Data tallennetaan SQLite-tietokantaan.
 
-INSTALL
-    KLOONAA PROJEKTI
+API mahdollistaa:
+- siivoojien hakemisen
+- uusien siivoojien lisäämisen
+- palkkaluokan päivittämisen
+- siivouspaikkojen poistamisen
+
+---
+
+## Teknologiat ja riippuvuudet
+
+- Node.js
+- Express
+- SQLite3
+- dotenv
+- body-parser
+
+---
+
+## Asennus
+## 1. kloonaa projekti
+    ```bash
     git clone <repository-url>
     cd <project-directory>
 
-    ASENNA RIIPPUVUUDEET
+## 2. Asenna riippuvuudet ASENNA
+    ```bash
     npm install
 
-    LUO TIETOKANTA
+## 3. Luo tietokanta
+    ```bash
     sqlite3 database.db < sql/create.sql
     sqlite3 database.db < sql/insert.sql
+    
     Tarkemmat tiedot sql/README.txt
 
-    ASETA YMPÄRISTÖMUUTTUJAT
-    Luo .env ja määritä siellä PORT
+## 4. Ympäristömuuttujat
+    Luo .env -tiedosto ja määritä:
+    ```bash
+    PORT=8080
 
-USAGE
-    KÄYNNISTÄ PALVELIN
+------
+
+## Käyttö
+    Käynnistä palvelin
+    ```bash
     node server.js
 
-API DESCRIPTION
+-----
+ ### API-endpointit
+
     HAE SIIVOOJA ID.N PERUSTEELLA
         GET /cleaners/:ID
         Palauttaa siivoojan tiedot annetulla ID:llä
@@ -35,7 +61,7 @@ API DESCRIPTION
         id (numero, vaadittu) – Haettavan siivoojan ID.
 
         Vastaus:
-        Onnistunut: JSON-objekti, joka sisältää siivoojan etunimen, sukunimen, palkkatiedot, työnteon aloituspäivän ja siivouspaikan.
+        Onnistunut: JSON-objekti, joka sisältää siivoojan etunimen, sukunimen, palkkatiedot,            työnteon aloituspäivän ja siivouspaikan.
         Epäonnistunut: Virheilmoitus ja statuskoodi (400, 404 tai 500).
 
     HAE SIIVOOJAA TIETOJEN PERUSTEELLA
@@ -98,8 +124,9 @@ API DESCRIPTION
             "message": "unknown endpoint"
         }
 
+-----
 
-API EXAMPLES
+## API EXAMPLES
 
 GET by id
 curl --silent http://localhost:8080/cleaners/2
